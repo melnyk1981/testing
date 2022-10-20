@@ -1,8 +1,93 @@
+*{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px rgb(61, 36, 36, 0.7);
+  /* border: none; */
+}
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
-.App-logo {
+/* header */
+
+.head_div {
+  /* background-color: rgb(107, 42, 230); */
+  margin-top: -1px;
+  margin-bottom: -2px;
+  background-image: url(./img/2.png);
+  background-size:100% 100%;
+  height: 80px;
+}
+
+.usd, .eur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5); */
+  color: aliceblue;
+  max-width: 220px;
+  min-width: 100px;
+  height: 40px;
+  margin-left: 5%;
+  
+}
+.usd {  
+  background-color: rgb(54, 73, 73, 0.5);  
+}
+.eur {  
+  background-color: rgba(233, 134, 139, 0.5);  
+}
+
+/* converter */
+.converter_div {
+  display: flex;
+  justify-content: center;
+  position:fixed;
+  background-color: aquamarine;
+  background-image: url(./img/sky.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.converter {
+  margin-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  min-width: 200px;
+  height: 150px;
+  background-color: rgb(52, 63, 83, 0.4);
+  border-radius: 10px;
+}
+.curr1, .curr2 {
+  margin: 5px;
+} 
+.select {
+  background-color: rgb(39, 65, 104, 0);
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option {
+  background-color: rgb(39, 65, 104);
+}
+
+.currency {
+  width: 170px;
+  background-color: rgb(78, 128, 202, 0);
+  border: 2px solid aliceblue;
+  color: aliceblue;
+  border-radius: 5px;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +120,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
